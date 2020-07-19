@@ -12,6 +12,32 @@ export class AddcityComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  navigateTo(){
+
+    this.router.navigateByUrl('role/admin/branchDetails');
+  }
+  navigateToEmployee(){
+    this.router.navigateByUrl('role/admin/employeeDetails');
+
+  }
+  navigateToEnquire(){
+    this.router.navigateByUrl('role/admin/enquireDetails');
+
+  }
+  navigateToLoanDetails(){
+    this.router.navigateByUrl('role/admin/loanDetails');
+
+  }
+  navigateToroleDetails(){
+    this.router.navigateByUrl('role/admin/roleDetails');
+
+  }
+  navigateToTenure(){
+    this.router.navigateByUrl('role/admin/tenure');
+
+  }
+
   navigateTobankdetails()
 {
   this.router.navigateByUrl('role/admin/bankdetails');
@@ -68,4 +94,5 @@ navigateTovehicledetails()
 {
   this.router.navigateByUrl('role/admin/vehicledetails')
 }
+
 }

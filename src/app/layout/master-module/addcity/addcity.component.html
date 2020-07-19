@@ -1,5 +1,14 @@
+
+
 <!DOCTYPE html>
 <html>
+<p>Hi there, If you want to see the details please click on Ledger Details</p>
+
+
+
+<!DOCTYPE html>
+<html>
+
 <head>
 <style>
 .dropbtn {
@@ -48,6 +57,16 @@
 
 
 <div class="dropdown">
+
+  <button class="dropbtn">Ledger Details</button>
+  <div class="dropdown-content">
+  <a (click)="navigateTo()">Branch Details</a>
+  <a (click)="navigateToEmployee()">Employee Details</a>
+  <a (click)="navigateToEnquire()">Enquire Details</a>
+  <a (click)="navigateToLoanDetails()">Loan Details</a>
+  <a (click)="navigateToroleDetails()">Role Details</a>
+  <a (click)="navigateToTenure()">Tenure Details</a>
+
     <p>Click Here For Further Details</p>
   <button class="dropbtn">Ledger Details</button>
   <div class="dropdown-content">
@@ -65,6 +84,7 @@
   <a (click)="navigateToledgerdetails()">ledgerdetails</a>
   <a (click)="navigateToperviousloandetails()">perviousloandetails</a>
   <a (click)="navigateTovehicledetails()">vehicledetails</a>
+
   </div>
 </div>
 
@@ -72,6 +92,9 @@
 
 </body>
 </html>
+
+
+
 
 
 

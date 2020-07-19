@@ -2,6 +2,16 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { Routes, RouterModule } from '@angular/router';
+
+import { CibilStatusComponent } from './cibil-status/cibil-status.component';
+const OErouting: Routes = [
+    { path: 'dashboard', component: DashboardComponent },
+    {path: 'cibil', component: CibilStatusComponent}
+];
+
+@NgModule({
+    declarations: [DashboardComponent,  CibilStatusComponent],
+
 import { SidebarComponent } from '../components/sidebar/sidebar.component';
 import { CibilStatusComponent } from './cibil-status/cibil-status.component';
 
@@ -18,6 +28,7 @@ const OErouting: Routes = [
 
 @NgModule({
     declarations: [DashboardComponent,  CibilStatusComponent, PreviousLoanDetailsComponent, DoucmentDetailsComponent],
+
     imports: [CommonModule, RouterModule.forChild(OErouting)],
 })
 export class OperationalExecativeModule {}

@@ -1,0 +1,33 @@
+<p>loan-disbusment works!</p>
+<div id="emi">
+    <h3>Loan Disbusment Details </h3>
+    <p-table [value]="loanDisbusment">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Loan Disbusment ID</th>
+            <th>Loan Disbusment Master ID</th>
+            <th>Loan Number</th>
+            <th>Loan Amount</th>
+            <th>Tenure</th>                
+            <th>EMI</th>
+            <th>Status Code</th>
+            </tr>
+            
+        </ng-template>
+    
+    
+        <ng-template pTemplate="body" let-loanDisbusment>
+        <tr>
+         
+            <td>{{loanDisbusment.loanDisbursementId}}</td>
+            <td>{{loanDisbusment.loanDisbursementMasterId}}</td>
+            <td>{{loanDisbusment.loanNo}}</td>
+            <td>{{loanDisbusment.loanAmount}}</td>
+            <td>{{loanDisbusment.tenure}}</td>
+           <td>{{loanDisbusment.emi}}</td>
+           <td>{{loanDisbusment.statusCode}}</td>
+         </tr>
+    </ng-template>
+    </p-table>
+    </div>
+    <button (click)="downloadPdf()">Genrate PDF</button>

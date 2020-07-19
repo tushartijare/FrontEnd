@@ -1,0 +1,86 @@
+<p>employee-details works!</p>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container" id="employee">
+
+    <div class="row">
+        <!-- <div class="col-md-6">
+            
+        </div> -->
+
+
+
+   
+    
+<div class="col-md-18">
+    <div class='panel panel-primary'> 
+        <div class='panel-heading'>
+     <h3>Employee details</h3><br>
+    </div>
+     <div class='panel-body'>
+         <div class='table-responsive'>
+            <table class="table table-striped">
+                <tbody >
+                    <tr>
+                        <th>EmployeeId</th>
+                    <th>EmployeeFullName</th>
+                    <th>EmployeeHouseNo</th>
+                    <th>employeeStreetName</th>
+                    <th>employeeArea</th>
+                    <th>employeeCity</th>
+                    <th>employeeTaluka</th>
+                    <th>employeeMobileNo</th>
+                    <th>employeeAlternateMobileNo</th>
+                    <th>employeeEmail</th>
+                    <th>employeeGender</th>
+                    <th>employeeRole</th>
+                    <th>employeeBranch</th>
+                    <th>employeeDateOfBirth</th>
+                    <th>employeeDocumentID</th>
+                    <th>employeePanCard</th>
+                    <th>employeeAdharcard</th>
+                    <th>employeePhoto</th>
+                    </tr>
+                   
+                  <tr *ngFor='let leda of employeeDetails'>
+                    <td>{{leda.employeeId}}</td>
+        <td>{{leda.employeeFullName}}</td>
+        <td>{{leda.employeeAddress.empHouseNo}}</td>
+        <td>{{leda.employeeAddress.empStreetName}}</td>
+        <td>{{leda.employeeAddress.empArea}}</td>
+        <td>{{leda.employeeAddress.empCity}}</td>
+        <td>{{leda.employeeAddress.empTaluka}}</td>
+        <td>{{leda.employeeMobileNo}}</td>
+        <td>{{leda.employeeAlternateMobileNo}}</td>
+       <td>{{leda.employeeEmail}}</td>
+       <td>{{leda.employeeGender}}</td>
+       <td>{{leda.employeeRole}}</td>
+       <td>{{leda.employeeBranch}}</td>
+       <td>{{leda.employeeDateOfBirth}}</td>
+       <td>{{leda.employeeDocument.employeeDocumentId}}</td>
+       <td>{{leda.employeeDocument.employeePanCard}}</td>
+       <td>{{leda.employeeDocument.employeeAdharcard}}</td>
+       <td>{{leda.employeeDocument.employeePhoto}}</td>
+    
+            </tr>   
+                </tbody>
+              </table>  
+
+</div>
+</div>     
+</div>
+</div>
+</div>
+
+
+
+<button (click)="downloadPdf()">Download PDF</button>

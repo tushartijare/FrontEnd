@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+
+
 import { CommonServiceService } from 'src/app/shared/common-service.service';
 import * as jsPdf  from 'jspdf';
 import html2canvas from 'html2canvas';
+
 
 @Component({
   selector: 'app-cibil-status',
@@ -9,6 +12,14 @@ import html2canvas from 'html2canvas';
   styleUrls: ['./cibil-status.component.scss']
 })
 export class CibilStatusComponent implements OnInit {
+
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}
 
   constructor(private s:CommonServiceService) { }
 
@@ -41,3 +52,4 @@ export class CibilStatusComponent implements OnInit {
     })
 }
 }
+
