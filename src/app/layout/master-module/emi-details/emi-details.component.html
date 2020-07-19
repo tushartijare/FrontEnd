@@ -1,0 +1,34 @@
+<p>emi-details works kas kay!</p>
+
+<div id="emi">
+<h3>EMI Details</h3>
+<p-table [value]="leda">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>EMI Payment Id</th>
+        <th>Loan Number</th>
+        <th>EMI Ammount</th>
+        <th>EMI Last Date</th>
+        <th>EMI Paid Amount</th>
+        <th>Total Amount</th>
+        <th>EMI Paid Date</th>
+        </tr>
+    </ng-template>
+
+
+    <ng-template pTemplate="body" let-leda>
+    <tr>
+        <td>{{leda.emiPaymentId}}</td>
+        <td>{{leda.loanNo}}</td>
+        <td>{{leda.emiAmount}}</td>
+        <td>{{leda.emiLastDate}}</td>
+        <td>{{leda.emiPaidAmount}}</td>
+       <td>{{leda.totalAmount}}</td>
+       <td>{{leda.emiPaidDate}}</td>
+     </tr>
+</ng-template> 
+</p-table>
+</div>
+<button (click)="downloadPdf()">Genrate PDF</button>
+<!-- <h6>click</h6>
+<a (click)=" ngOnInit()">Click here</a> -->
