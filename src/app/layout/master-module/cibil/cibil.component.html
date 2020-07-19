@@ -1,0 +1,66 @@
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+
+    <div class="row">
+        
+
+
+<!-- 2nd side start -->
+   
+    
+<div class="col-md-12">
+    <div class='panel panel-primary'> 
+        <div class='panel-heading'>
+     <h1>CibilStatus</h1><br>
+    </div>
+     <div class='panel-body'>
+         <div class='table-responsive'>
+            <table class="table table-striped" id='cibil'>
+                <tbody >
+                    <tr>
+                        <th>cibilId</th>
+                        <th>leadId</th>
+                        <th>cibilScore</th>
+                        <th>cibilScoreDateTime</th>
+                        <th>status</th>
+                        <th>remark</th>
+                       
+                    </tr>
+                
+                    <tr *ngFor='let ci of cibil'> 
+                        <td>{{ci.cibilId}}</td>
+                        <td>{{ci.leadId}}</td>
+                        <td>{{ci.cibilScore}}</td>
+                        <td>{{ci.cibilScoreDateTime}}</td>
+                        <td>{{ci.status}}</td>
+                        <td>{{ci.remark}}</td>
+                
+                    </tr>
+                    
+                
+                </tbody>
+            </table>
+
+</div>
+</div>     
+</div>
+</div>
+</div>
+<button (click)="downloadPdf()">Download pdf</button>
+
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+
+    <div class="row">
+        
+
+
+<!-- 2nd side start -->
+   
+    
+<div class="col-md-12">
+    <div class='panel panel-primary'> 
+        <div class='panel-heading'>
+     <h1>EMIDetails</h1><br>
+    </div>
+     <div class='panel-body'>
+         <div class='table-responsive'>
+            <table class="table table-striped" id='emidetails'>
+                <tbody >
+                    <th> emiPaymentId</th>
+                    <th>loanNo</th>
+                    <th>emiAmount</th>
+                    <th>emiLastDate</th>
+                    <th>emiPaidAmount</th>
+                    <th>totalAmount</th>
+                  
+                    
+                    <tr *ngFor='let ed of emidetails'>
+                    <td>{{ed.emiPaymentId}}</td>
+                    <td>{{ed.loanNo}}</td>
+                    <td>{{ed.emiAmount}}</td>
+                    <td>{{ed.emiLastDate}}</td>
+                    <td>{{ed.emiPaidAmount}}</td>
+                    <td>{{ed.totalAmount}}</td>
+                </tr>
+                </tbody>
+            </table>
+
+</div>
+</div>     
+</div>
+</div>
+</div>
+<button (click)="downloadPdf()">Download pdf</button>
+

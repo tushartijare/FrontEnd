@@ -1,0 +1,23 @@
+<p>previous-loan-details works!</p>
+<div id="previous-loan-details">
+    <h3>previous-loan-details </h3>
+    <table border="1">
+        <tr>
+            <th>Loan Id</th>
+            <th>Remaining EMI</th>
+            <th>Remaining Amount</th>
+        </tr>
+    
+        <tr *ngFor='let pemi of previousLoanDeatils'> 
+            <td>{{pemi.id}}</td>
+            <td>{{pemi.remainingEmi}}</td>
+            <td>{{pemi.remainingAmount}}</td>
+    
+        </tr>
+        
+    </table>
+    
+</div>
+<button (click)="downloadPdf()">previous-loan-details pdf</button>
+
+

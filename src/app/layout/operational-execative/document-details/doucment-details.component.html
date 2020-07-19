@@ -1,0 +1,47 @@
+<p>doucment-details works!</p>
+<div id="DocumentDetails">
+    <h3>DocumentDetails </h3>
+    <table border="1">
+        <tr>
+            <th>documentId</th>
+            <th>customerId</th>
+            <th>addressProof</th>
+            <th>bankStatement</th>
+            <th>itrFile </th>
+            <th>photo</th>
+            <th>postDatedCheck</th>
+            <th>signature</th>
+            <th>thumb</th>
+            <th>bankcheck</th>
+           <th>salarySlip</th>
+           <th>adharcard</th>
+           <th>pancard</th>
+          <th>previousLoanStatement</th>
+        </tr>
+    
+        <tr *ngFor='let docde of documentDetails'> 
+            <td>{{docde.documentId}}</td>
+            <td>{{docde.customerId}}</td>
+            <td>{{docde.addressProof}}</td>
+            <td>{{docde.bankStatement}}</td>
+            <td>{{docde.itrFile}}</td>
+            <td>{{docde.photo}}</td>
+            <td>{{docde.postDatedCheck}}</td>
+            <td>{{docde.signature}}</td>
+            <td>{{docde.thumb}}</td>
+            <td>{{docde.bankcheck}}</td>
+            <td>{{docde.salarySlip}}</td>
+            <td>{{docde.adharcard}}</td>
+            <td>{{docde.pancard}}</td>
+            <td>{{docde.previousLoanStatement}}</td>
+    
+        </tr>
+        
+    </table>
+    
+</div>
+<button (click)="downloadPdf()">Document-details pdf</button>
+
+
+
+
