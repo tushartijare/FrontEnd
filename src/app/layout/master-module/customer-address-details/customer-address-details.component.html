@@ -1,0 +1,91 @@
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+
+    <div class="row">
+        
+
+
+<!-- 2nd side start -->
+   
+    
+<div class="col-md-12">
+    <div class='panel panel-primary'> 
+        <div class='panel-heading'>
+     <h1>CustomerAddressDetails</h1><br>
+    </div>
+     <div class='panel-body'>
+         <div class='table-responsive'>
+            <table class="table table-striped" id='customeraddressdetails'>
+                <tbody >
+                    <th> addressId</th>
+                    <th> houseNo</th>
+                    <th>streetName</th>
+                    <th> area</th>
+                    <th>landMark</th>
+                    <th>taluka</th>
+                    <th> city</th>
+                    <th>district</th>
+                    <th>state</th>
+                    <th>country</th>
+                    <th>pincode</th>
+                    <th>permanent_houseNo</th>
+                    <th>permanent_streetName</th>
+                    <th>permanent_area</th>
+                    <th>permanent_landMark</th>
+                    <th>permanent_taluka</th>
+                    <th>permanent_city</th>
+                    <th>permanent_district</th>
+                    <th>permanent_state</th>
+                    <th>permanent_country</th>
+                    <th>permanent_pincode</th>
+                    <th>staus</th>
+
+                    <tr *ngFor='let ca of  customeraddressDetails'>
+                    <td>{{cad.addressId}}</td>
+                    <td>{{cad.houseNo}}</td>
+                    <td>{{cad.streetName}}</td>
+                    <td>{{cad.area}}</td>
+                    <td>{{cad.landMark}}</td>
+                    <td>{{cad.taluka}}</td>
+                    <td>{{cad.city}}</td>
+                    <td>{{cad.district}}</td>
+                    <td>{{cad.state}}</td>
+                    <td>{{cad.country}}</td>
+                    <td>{{cad.pincode}}</td>
+                    <td>{{cad.permanent_houseNo}}</td>
+                    <td>{{cad.permanent_streetName}}</td>
+                    <td>{{cad.permanent_area}}</td>
+                    <td>{{cad.permanent_landMark}}</td>
+                    <td>{{cad.permanent_taluka}}</td>
+                    <td>{{cad.permanent_city}}</td>
+                    <td>{{cad.permanent_district}}</td>
+                    <td>{{cad.permanent_state}}</td>
+                    <td>{{cad.permanent_country}}</td>
+                    <td>{{cad.permanent_pincode}}</td>
+                   
+                    <td>{{cad.staus}}</td>
+                </tr>
+                </tbody>
+            </table>
+
+</div>
+</div>     
+</div>
+</div>
+</div>
+<button (click)="downloadPdf()">Downloadpdf</button>
+
+
+
+
+

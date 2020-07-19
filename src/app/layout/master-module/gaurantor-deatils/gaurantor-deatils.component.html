@@ -1,0 +1,65 @@
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+
+    <div class="row">
+        
+
+
+<!-- 2nd side start -->
+   
+    
+<div class="col-md-12">
+    <div class='panel panel-primary'> 
+        <div class='panel-heading'>
+     <h1>GaurantorDetails</h1><br>
+    </div>
+     <div class='panel-body'>
+         <div class='table-responsive'>
+            <table class="table table-striped" id='gaurantordetails'>
+                <tbody >
+                    <th>guarantor_id </th>
+                    <th>guarantor_Name</th>
+                    <th>guarantor_DOB</th>
+                    <th>guarantor_RelationshipWithConsumer</th>
+                    <th>guarantor_Nobileno</th>
+                    <th>guarantor_Adharcardno</th>
+                    <th>guarantor_MortageDetails</th>
+                    <th>guarantor_JobDetails</th>
+                    <th>guarantor_LocalAddress</th>
+                    <th>guarantor_PermanentAddress</th>
+                   
+                  
+                    
+                    <tr *ngFor='let gd of gaurantordetails'>
+                    <td>{{gd.guarantor_id}}</td>
+                    <td>{{gd.guarantor_Name}}</td>
+                    <td>{{gd.guarantor_DOB}}</td>
+                    <td>{{gd.guarantor_RelationshipWithConsumer}}</td>
+                    <td>{{gd.guarantor_Nobileno}}</td>
+                    <td>{{gd.guarantor_Adharcardno}}</td>
+                    <td>{{gd.guarantor_MortageDetails}}</td>
+                    <td>{{gd.guarantor_JobDetails}}</td>
+                    <td>{{gd.guarantor_LocalAddress}}</td>
+                    <td>{{gd.guarantor_PermanentAddress}}</td>
+                   
+                </tr>
+                </tbody>
+            </table>
+</div>
+</div>     
+</div>
+</div>
+</div>
+<button (click)="downloadPdf()">Download pdf</button>
+
+

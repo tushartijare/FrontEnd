@@ -1,0 +1,33 @@
+<p>cibil-status works!</p>
+
+
+<div id="cibil">
+    <h3>Cibil details </h3>
+    <table border="1">
+        <tr>
+            <th>cibilId</th>
+            <th> leadId</th>
+            <th>cibilScore</th>
+            <th>cibilScoreDateTime</th>
+            <th>status</th>
+            <th>remark</th>
+           
+        </tr>
+    
+        <tr *ngFor='let ci of cibil'> 
+            <td>{{ci.cibilId}}</td>
+            <td>{{ci.leadId}}</td>
+            <td>{{ci.cibilScore}}</td>
+            <td>{{ci.cibilScoreDateTime}}</td>
+            <td>{{ci.status}}</td>
+            <td>{{ci.remark}}</td>
+    
+        </tr>
+        
+    </table>
+    
+</div>
+<button (click)="downloadPdf()">Cibildetails pdf</button>
+
+
+

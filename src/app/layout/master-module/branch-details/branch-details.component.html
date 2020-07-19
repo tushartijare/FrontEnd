@@ -1,0 +1,86 @@
+<p>branch-details works!</p>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container" id="branch">
+
+    <div class="row">
+        <!-- <div class="col-md-6">
+            
+        </div> -->
+
+
+
+   
+    
+<div class="col-md-18">
+    <div class='panel panel-primary'> 
+        <div class='panel-heading'>
+     <h3>Branch details</h3><br>
+    </div>
+     <div class='panel-body'>
+         <div class='table-responsive'>
+            <table class="table table-striped">
+                <tbody >
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>IFSCCode</th>
+                        <th>MICRCode</th>
+                        <th>ContactNo</th>
+                        <th>EmailId</th>
+                        <th>branchAddressId</th>
+                        <th>branchArea</th>
+                        <th>branchBuildingNo</th>
+                        <th>branchCity</th>
+                        <th>branchCountry</th>
+                        <th>branchDistrict</th>
+                        <th>branchLandMark</th>
+                        <th>branchPinCode</th>
+                        <th>branchState</th>
+                        <th>branchStreetName</th>
+                        <th>branchTaluka</th> 
+                        </tr>
+                  
+                       
+                  <tr *ngFor='let branchDetails of branchDetails'>
+                    <td>{{branchDetails.branchId}}</td>
+                    <td>{{branchDetails.branchName}}</td>
+                    <td>{{branchDetails.branchType}}</td>
+                    <td>{{branchDetails.branchIFSC_Code}}</td>
+                    <td>{{branchDetails.branchMICR_Code}}</td>
+                    <td>{{branchDetails.branchContactNo}}</td>
+                   <td>{{branchDetails.branchEmailId}}</td>
+                   <td>{{branchDetails.branchAddress.branchAddressId}}</td>
+                   <td>{{branchDetails.branchAddress.branchArea}}</td>
+                   <td>{{branchDetails.branchAddress.branchBuildingNo}}</td>
+                   <td>{{branchDetails.branchAddress.branchCity}}</td>
+                   <td>{{branchDetails.branchAddress.branchCountry}}</td>
+                   <td>{{branchDetails.branchAddress.branchDistrict}}</td>
+                   <td>{{branchDetails.branchAddress.branchLandMark}}</td>
+                   <td>{{branchDetails.branchAddress.branchPinCode}}</td>
+                   <td>{{branchDetails.branchAddress.branchState}}</td>
+                   <td>{{branchDetails.branchAddress.branchStreetName}}</td>
+                   <td>{{branchDetails.branchAddress.branchTaluka}}</td>
+          
+            </tr>   
+                </tbody>
+              </table>  
+
+</div>
+</div>     
+</div>
+</div>
+</div>
+
+
+
+<button (click)="downloadPdf()">Download PDF</button>

@@ -1,0 +1,88 @@
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+
+    <div class="row">
+        
+
+
+<!-- 2nd side start -->
+   
+    
+<div class="col-md-12">
+    <div class='panel panel-primary'> 
+        <div class='panel-heading'>
+     <h1>CustomerAddress</h1><br>
+    </div>
+     <div class='panel-body'>
+         <div class='table-responsive'>
+            <table class="table table-striped" id='customeraddress'>
+                <tbody >
+                    <tr>
+                    <th>cust_addrID</th>
+                    <th>local_houseNo</th>
+                    <th>local_streetName</th>
+                    <th>local_area</th>
+                    <th>local_landMark</th>
+                    <th>local_taluka</th>
+                    <th>local_city</th>
+                    <th>local_district</th>
+                    <th>local_state</th>
+                    <th>local_country</th>
+                    <th>local_pincode</th>
+                    <th>permanent_houseNo</th>
+                    <th>permanent_streetName</th>
+                    <th>permanent_area</th>
+                    <th>permanent_landMark</th>
+                    <th>permanent_taluka</th>
+                    <th>permanent_city</th>
+                    <th>permanent_district</th>
+                    <th>permanent_state</th>
+                    <th>permanent_country</th>
+                    <th>permanent_pincode</th>
+                    <th>verification_status</th>
+                </tr>
+                   
+                    <tr *ngFor='let ca of customeraddress'>
+                    <td>{{ca.cust_addrID}}</td>
+                    <td>{{ca.local_houseNo}}</td>
+                    <td>{{ca.local_streetName}}</td>
+                    <td>{{ca.local_area}}</td>
+                    <td>{{ca.local_landMark}}</td>
+                    <td>{{ca.local_taluka}}</td>
+                    <td>{{ca.local_city}}</td>
+                    <td>{{ca.local_district}}</td>
+                    <td>{{ca.local_state}}</td>
+                    <td>{{ca.local_country}}</td>
+                    <td>{{ca.local_pincode}}</td>
+                    <td>{{ca.permanent_houseNo}}</td>
+                    <td>{{ca.permanent_streetName}}</td>
+                    <td>{{ca.permanent_area}}</td>
+                    <td>{{ca.permanent_landMark}}</td>
+                    <td>{{ca.permanent_taluka}}</td>
+                    <td>{{ca.permanent_city}}</td>
+                    <td>{{ca.permanent_district}}</td>
+                    <td>{{ca.permanent_state}}</td>
+                    <td>{{ca.permanent_country}}</td>
+                    <td>{{ca.permanent_pincode}}</td>
+                   
+                    <td>{{ca.verification_status}}</td>
+                </tr>
+                </tbody>
+            </table>
+
+</div>
+</div>     
+</div>
+</div>
+</div>
+<button (click)="downloadPdf()">Download pdf</button>

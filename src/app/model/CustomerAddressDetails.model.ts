@@ -1,0 +1,25 @@
+export class CustomerAddressDetails
+{
+     addressId:number;
+	 houseNo:string;
+	 streetName:string;
+	 area:string;
+	 landMark:string;
+	 taluka:string;
+	 city:string;
+	 district:string;
+	 state:string;
+	 country:string;
+	 pincode:string;
+	 Permenemt_houseNo:string;
+	 Permenemt_streetName:string;
+	 Permenemt_area:string;
+	 Permenemt_landMark:string;
+	 Permenemt_taluka:string;
+	 Permenemt_city:string;
+	 Permenemt_district:string;
+	 Permenemt_state:string;
+	 Permenemt_country:string;
+	 Permenemt_pincode:string;
+	 staus:number;
+}

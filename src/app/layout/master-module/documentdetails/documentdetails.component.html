@@ -1,0 +1,71 @@
+<p>documentdetails works!</p>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+
+    <div class="row">
+        
+
+
+<!-- 2nd side start -->
+   
+    
+<div class="col-md-12">
+    <div class='panel panel-primary'> 
+        <div class='panel-heading'>
+     <h1>DocumentDetails</h1><br>
+    </div>
+     <div class='panel-body'>
+         <div class='table-responsive'>
+            <table class="table table-striped" id=' documentdetails'>
+                <tbody >
+                    <th>documentId</th>
+                    <th>customerId</th>
+                    <th>addressProof</th>
+                    <th>bankStatement</th>
+                    <th>itrFile</th>
+                    <th>photo</th>
+                    <th>postDatedCheck</th>
+                    <th>signature</th>
+                    <th>thumb</th>
+                    <th>bankcheck</th>
+                    <th>salarySlip</th>
+                    <th>adharcard</th>
+                    <th>pancard</th>
+                    <th> previousLoanStatement</th>
+                    
+                    <tr *ngFor='let dd of  documentdetails'>
+                    <td>{{dd.documentId}}</td>
+                    <td>{{dd.customerId}}</td>
+                    <td>{{dd.addressProof}}</td>
+                    <td>{{dd.bankStatement}}</td>
+                    <td>{{dd.itrFile}}</td>
+                    <td>{{dd.photo}}</td>
+                    <td>{{dd.postDatedCheck}}</td>
+                    <td>{{dd.signature}}</td>
+                    <td>{{dd.thumb}}</td>
+                    <td>{{dd.bankcheck}}</td>
+                    <td>{{dd.salarySlip}}</td>
+                    <td>{{dd.adharcard}}</td>
+                    <td>{{dd.pancard}}</td>
+                    <td>{{dd.previousLoanStatement}}</td>
+                   
+
+                </tr>
+                </tbody>
+            </table>
+</div>
+</div>     
+</div>
+</div>
+</div>
+<button (click)="downloadPdf()">Download pdf</button>
+
