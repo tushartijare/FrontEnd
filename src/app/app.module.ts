@@ -15,6 +15,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CommonServiceService } from './shared/common-service.service';
+
 import {TableModule} from 'primeng/table';
 import { BranchDetailsService } from './shared/services/branch-details.service';
 import { EmployeeDetailsService } from './shared/services/employee-details.service';
@@ -22,6 +23,8 @@ import { EnquireDetailsService } from './shared/services/enquire-details.service
 import { LoandetailsService } from './shared/services/loandetails.service';
 import { RoleDetailsService } from './shared/services/role-details.service';
 import { TenureService } from './shared/services/tenure.service';
+
+
 // AoT requires an exported function for factories
 export const createTranslateLoader = (http: HttpClient) => {
     /* for development
@@ -36,7 +39,10 @@ export const createTranslateLoader = (http: HttpClient) => {
 @NgModule({
     declarations: [AppComponent],
     imports: [
+
         TableModule,
+
+
         BrowserModule,
         AppRoutingModule,
         BrowserAnimationsModule,
@@ -51,7 +57,11 @@ export const createTranslateLoader = (http: HttpClient) => {
             }
         })
     ],
+
     providers: [CommonServiceService,BranchDetailsService,EmployeeDetailsService,EnquireDetailsService,LoandetailsService,RoleDetailsService,TenureService],
+
+    providers: [CommonServiceService],
+
     bootstrap: [AppComponent]
 })
 export class AppModule {}

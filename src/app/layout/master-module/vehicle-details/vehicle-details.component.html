@@ -1,0 +1,67 @@
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+
+    <div class="row">
+        
+
+
+<!-- 2nd side start -->
+   
+    
+<div class="col-md-12">
+    <div class='panel panel-primary'> 
+        <div class='panel-heading'>
+     <h1>VehicleDetails</h1><br>
+    </div>
+     <div class='panel-body'>
+         <div class='table-responsive'>
+            <table class="table table-striped" id='vehicledetails'>
+                <tbody >
+                    <th>id</th>
+                    <th>vehicleRegistrationNo</th>
+                    <th>vehicleEngineNo</th>
+                    <th>vehicleChassisNo</th>
+                    <th>vehicleType</th>
+                    <th>vehicleCompany</th>
+                    <th>vehicleModel</th>
+                    <th>vehicleModelNo</th>
+                    <th>vehicleColor</th>
+                   <th>actualPrice</th>
+                   <th>fuelType</th>
+                    
+
+                    <tr *ngFor='let vd of vehicledetails'>
+                    <td>{{vd.id}}</td>
+                    <td>{{vd.vehicleRegistrationNo}}</td>
+                    <td>{{vd.vehicleEngineNo}}</td>
+                    <td>{{vd.vehicleChassisNo}}</td>
+                    <td>{{vd.vehicleType}}</td>
+                    <td>{{vd.vehicleCompany}}</td>
+                    <td>{{vd.vehicleModel}}</td>
+                    <td>{{vd.vehicleModelNo}}</td>
+                    <td>{{vd.vehicleColor}}</td>
+                    <td>{{vd.actualPrice}}</td>
+                    <td>{{vd.fuelType}}</td>
+                  
+                </tr>
+                </tbody>
+            </table>
+</div>
+</div>     
+</div>
+</div>
+</div>
+<button (click)="downloadPdf()">Download pdf</button>
+
+
+

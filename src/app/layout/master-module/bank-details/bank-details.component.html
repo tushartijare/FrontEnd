@@ -1,0 +1,52 @@
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+
+    <div class="row">
+        
+
+
+<!-- 2nd side start -->
+   
+    
+<div class="col-md-12">
+    <div class='panel panel-primary'> 
+        <div class='panel-heading'>
+     <h1>BankDetails</h1><br>
+    </div>
+     <div class='panel-body'>
+         <div class='table-responsive'>
+            <table class="table table-striped" id='bankdetails'>
+                <tbody >
+                    <th>bid</th>
+                    <th>bankAccountNo</th>
+                    <th>bankAccountHolderName</th>
+                    <th>status</th>
+                    
+                    <tr *ngFor='let bd of bankdetails'>
+                    <td>{{bd.bid}}</td>
+                    <td>{{bd.bankAccountNo}}</td>
+                    <td>{{bd.bankAccountHolderName}}</td>
+                    <td>{{bd.status}}</td>
+                </tr>
+                </tbody>
+            </table>
+
+</div>
+</div>     
+</div>
+</div>
+</div>
+<button (click)="downloadPdf()">Downloadpdf</button>
+
+
+

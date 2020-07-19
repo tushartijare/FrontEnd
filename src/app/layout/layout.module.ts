@@ -15,10 +15,15 @@ import { LayoutComponent } from './layout.component';
 import { NavComponent } from './nav/nav.component';
 import { Screen2Component } from './screen2/screen2.component';
 import { FormsModule } from '@angular/forms';
+
 import {TableModule} from 'primeng/table';
 @NgModule({
     imports: [
         TableModule,
+
+@NgModule({
+    imports: [
+
         CommonModule,
         LayoutRoutingModule,
         MatToolbarModule,

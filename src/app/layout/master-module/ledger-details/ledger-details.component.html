@@ -1,0 +1,52 @@
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+
+    <div class="row">
+        
+
+
+<!-- 2nd side start -->
+   
+    
+<div class="col-md-12">
+    <div class='panel panel-primary'> 
+        <div class='panel-heading'>
+     <h1>LedgerDetails</h1><br>
+    </div>
+     <div class='panel-body'>
+         <div class='table-responsive'>
+            <table class="table table-striped" id='ledgerdetails'>
+                <tbody >
+                    <th>month</th>
+                    <th>emi_ammount</th>
+                    <th>intrest_amount</th>
+                    <th>principle_dedcution</th>
+                    <th> balance_due</th>
+                   
+                    <tr *ngFor='let ld of ledgerdetails'>
+                    <td>{{ld.month}}</td>
+                    <td>{{ld.emi_ammount}}</td>
+                    <td>{{ld.intrest_amount}}</td>
+                    <td>{{ld.principle_dedcution}}</td>
+                    <td>{{ld.balance_due}}</td>
+                </tr>
+                </tbody>
+            </table>
+
+</div>
+</div>     
+</div>
+</div>
+</div>
+<button (click)="downloadPdf()">Download pdf</button>
+

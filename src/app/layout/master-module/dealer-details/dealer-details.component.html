@@ -1,0 +1,64 @@
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+
+    <div class="row">
+        
+
+
+<!-- 2nd side start -->
+   
+    
+<div class="col-md-12">
+    <div class='panel panel-primary'> 
+        <div class='panel-heading'>
+     <h1>DealerDetails</h1><br>
+    </div>
+     <div class='panel-body'>
+         <div class='table-responsive'>
+            <table class="table table-striped" id='dealerdetails'>
+                <tbody >
+                    <th>dealer_Id</th>
+                    <th>dealer_Name</th>
+                    <th>dealer_DoB</th>
+                    <th>dealer_EmailId</th>
+                    <th>dealer_MobNo</th>
+                    <th>dealer_AdharCardNo</th>
+                    <th>dealer_LocalAddress</th>
+                    <th>dealer_PermanentAddress</th>
+                    <th>dealer_bankdetails</th>
+                   
+                    
+                   
+                    <tr *ngFor='let dd of  dealerdetails'>
+                    <td>{{dd.dealer_Id}}</td>
+                    <td>{{dd.dealer_Name}}</td>
+                    <td>{{dd.dealer_DoB}}</td>
+                    <td>{{dd.dealer_EmailId}}</td>
+                    <td>{{dd.dealer_MobNo}}</td>
+                    <td>{{dd.dealer_AdharCardNo}}</td>
+                    <td>{{dd.dealer_LocalAddress}}</td>
+                    <td>{{dd.dealer_PermanentAddress}}</td>
+                    <td>{{dd.dealer_bankdetails}}</td>
+                   
+
+                </tr>
+                </tbody>
+            </table>
+</div>
+</div>     
+</div>
+</div>
+</div>
+<button (click)="downloadPdf()">Download pdf</button>
+
+
